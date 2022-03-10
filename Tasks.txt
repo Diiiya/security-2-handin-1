@@ -1,0 +1,6 @@
+(d) Which implementation would be better suited for Bob’s remote
+backup and why?
+
+The AES Encryption in GCM mode will be better, because when using ECB mode even after encrypting, the image is still "readable"
+because there is no randomness, not iv or something similar and thus all same colored pixel are simply transformed in other
+color pixels but the content is still distinguishable.
